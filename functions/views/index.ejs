@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+
+    <link rel=icon href=images/favicon-16X16.png type=image/png sizes=16x16>
+    <link rel=icon href=images/favicon-32X32.png type=image/png sizes=32x32>
+
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+
+    <meta name=description content='<%= description %>'>
+
+    <meta itemprop=name content='<%= title %>'>
+    <meta itemprop=description content='<%= description %>'>
+
+    <meta name=og:title content='<%= description %>'>
+    <meta name=og:description content='<%= description %>'>
+    <meta name=og:url content='<%= url %>'>
+    <meta name=og:site_name content='<%= name %>'>
+    <meta name=og:type content=website>
+
+    <meta name='mobile-web-app-capable' content='yes'>
+    <meta name='theme-color' content='<%= styles.theme_color %>'>
+    <meta name='msapplication-navbutton-color' content='<%= styles.theme_color %>'>
+
+    <meta name='apple-mobile-web-app-capable' content='yes'>
+    <meta name='application-name' content='<%= name %>'>
+    <meta name='apple-mobile-web-app-title' content='<%= title %>'>
+    <meta name='apple-mobile-web-app-status-bar-style' content='<%= styles.theme_color %>'>
+
+    <link rel='canonical' href='<%= url %>'>
+
+    <title>
+        <%= title %>
+    </title>
+
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/min-width-1024px.css" rel="stylesheet" media="(min-width: 1024px)">
+    <link href="css/min-width-1200px.css" rel="stylesheet" media="(min-width: 1200px)">
+    <link href="css/min-width-600px.css" rel="stylesheet" media="(min-width: 600px)">
+    <link href="css/min-width-760px.css" rel="stylesheet" media="(min-width: 760px)">
+
+    <link href="css/fontawesome/css/custom-fontawesome.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' crossorigin>
+
+    <link rel="manifest" href="manifest.json">
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+        }
+        @media (max-width:1023px) {
+            .t-section__header{border-top:1px solid #404242;border-bottom:1px solid #404242}
+            .t-section--header .t-section__header{border-top:none;border-bottom:none}
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="c-main-container">
+
+
+        <section class="o-section o-section--header t-section t-section--header">
+            <div class=c-header>
+                <div class="o-section__header-bg t-section__header"></div>
+                <div class="o-section__content-bg t-section__content"></div>
+                <div class=o-container>
+                    <div class=o-section__container>
+                        <header class="o-section__header c-header__header t-section__header">
+                            <div class=c-header__inner-header>
+                                <div class=c-header__avatar>
+                                    <div class="a-header c-avatar">
+                                        <img class=c-avatar__img src=images/avatar.jpg alt="<%= name %>">
+                                    </div>
+                                </div>
+                            </div>
+                        </header>
+                        <div class="o-section__content c-header__content t-section__content">
+                            <div class=c-header__inner-content>
+                                <div class=c-header__top>
+                                    <div class=c-header__brand>
+                                        <div class=c-brand>
+                                            <div class="c-brand__title t-title">
+                                                <span class=c-brand__sizer>
+                                                    <a target=”_blank” href='http://www.google.com/search?q=%23vnoitkumar' rel=noreferrer aria-label='hashtag' class="a-header c-brand__first-word t-title__first-word"> <%= hashtag %> </a>
+                                                    <span class="a-header c-brand__second-word t-title__second-word"> <%= name %> </span>
+                                                </span>
+                                            </div>
+                                            <h2 class="a-header c-brand__sub-title t-sub-title">
+                                                <span class=c-brand__sizer> <%= job_profile %> </span>
+                                            </h2>
+                                        </div>
+                                    </div>
+                                    <ul class="c-header__social-buttons c-social-buttons">
+                                        <% social_profiles.forEach(function(social_profile){ %>
+                                            <li class=a-header>
+                                                <a href='<%- social_profile.link %>' target=_blank rel=noreferrer class="c-social-button t-social-button" aria-label='<%- social_profile.name %>'>
+                                                    <i class='<%- social_profile.font_awesome_icon %>'></i>
+                                                </a>
+                                            </li>
+                                        <% }); %>
+                                    </ul>
+                                </div>
+                                <div class=c-header__contact>
+                                    <hr class="a-header c-header__contact-divider">
+                                    <div class=o-grid>
+                                        <div class="o-grid__col-md-3 o-grid__col-sm-6">
+                                            <div class="a-header o-content">
+                                                <div class=o-content__body>
+                                                    <h4>
+                                                        <i class="fas fa-map-marker-alt"></i> &nbsp; Location
+                                                    </h4>
+                                                    <address> <%= current_location %> </address>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="o-grid__col-md-3 o-grid__col-sm-6">
+                                            <div class="a-header o-content">
+                                                <div class=o-content__body>
+                                                    <a href='tel:<%= mobile %>' class=t-link-container>
+                                                        <h4>
+                                                            <i class="fas fa-mobile-alt"></i> &nbsp; Mobile
+                                                        </h4>
+                                                        <p>
+                                                            <span class=t-link-container__item--blended> <%= mobile_label %> </span>
+                                                        </p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="o-grid__col-md-3 o-grid__col-sm-6">
+                                            <div class="a-header o-content">
+                                                <div class=o-content__body>
+                                                    <a href='mailto:<%= email %>' class=t-link-container>
+                                                        <h4>
+                                                            <i class="far fa-envelope"></i> &nbsp; Email
+                                                        </h4>
+                                                        <p>
+                                                            <span class=t-link-container__item--blended> <%= email %> </span>
+                                                        </p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="o-grid__col-md-3 o-grid__col-sm-6">
+                                            <div class="a-header o-content">
+                                                <div class=o-content__body>
+                                                    <a href="<%= resume_download_link %>" class=t-link-container>
+                                                        <h4>
+                                                            <i class="far fa-file-pdf"></i> &nbsp; Resume
+                                                        </h4>
+                                                        <p>
+                                                            <span class=t-link-container__item--blended> Download </span>
+                                                        </p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="o-section t-section">
+            <div class="o-section__header-bg t-section__header"></div>
+            <div class="o-section__content-bg t-section__content"></div>
+            <div class=o-container>
+                <div class=o-section__container>
+                    <header class="o-section__header t-section__header">
+                        <div class=o-content>
+                            <h2 class=o-section__heading> Intro</h2>
+                            <div class="o-content__body o-section__description">What I am all about.</div>
+                        </div>
+                    </header>
+                    <div class="o-section__content t-section__content">
+                        <div class=o-content>
+                            <div class=c-intro>
+                                <div class=o-content__body>
+                                    <p>Web Developer, skilled in all stages of the development life cycle for a dynamic web project in startups.</p>
+                                    <p>Proficient in
+                                        <br> <i class="fab fa-php"></i> &nbsp; PHP
+                                        <br> <i class="fab fa-laravel"></i> &nbsp; Laravel
+                                        <br> <i class="fas fa-database"></i> &nbsp; MySQL
+                                        <br> <i class="fab fa-html5"></i> &nbsp; HTML
+                                        <br> <i class="fab fa-css3-alt"></i> &nbsp; CSS
+                                        <br> <i class="fab fa-js"></i> &nbsp; JavaScript
+                                        <br> <i class="fab fa-twitter"></i> &nbsp; Bootstrap
+                                        <br> <i class="fas fa-code-branch"></i> &nbsp; Git
+                                        <br> <i class="fab fa-aws"></i> &nbsp; AWS
+                                        <br> <i class="fab fa-google"></i> &nbsp; GCP
+                                        <br> <i class="fab fa-docker"></i> &nbsp; Docker
+                                        <br>
+                                    </p>
+                                    <p>Experience working in
+                                        <br> <i class="fab fa-node"></i> &nbsp; Node Js
+                                        <br> <i class="fas fa-database"></i> &nbsp; NoSQL
+                                        <br> <i class="fab fa-angular"></i> &nbsp; Angular
+                                        <br> <i class="fas fa-fire"></i> &nbsp; Google Firebase
+                                        <br>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="o-section t-section">
+            <div class="o-section__header-bg t-section__header"></div>
+            <div class="o-section__content-bg t-section__content"></div>
+            <div class=o-container>
+                <div class=o-section__container>
+                    <header class="o-section__header t-section__header">
+                        <div class=o-content>
+                            <h2 class=o-section__heading> Experience</h2>
+                            <div class="o-content__body o-section__description">Yes. I&#39;ve been around.</div>
+                        </div>
+                    </header>
+                    <div class="o-section__content t-section__content u-pb-0">
+                        <div class="a-experience-timeline c-timeline t-border-color">
+                            <% work_experiences.forEach(function(work_experience){ %>
+                                <div class=c-timeline__item>
+                                    <div class="c-timeline__point t-timeline__point t-primary-bg"></div>
+                                    <div class=o-content>
+                                        <div class=o-grid>
+                                            <div class=o-grid__col-md-5>
+
+                                                <div class=c-work__timeframe>
+                                                    <%- work_experience.from.month %> <%- work_experience.from.year %> &ndash;
+                                                    <%- work_experience.to.month %> <%- work_experience.to.year %>
+                                                    <% if (work_experience.currently_working_here) { %>
+                                                        Present
+                                                    <% } %>
+                                                </div>
+
+
+                                                <h3 class=c-work__heading> <%- work_experience.company %></h3>
+                                                <h4 class=c-work__title> <%- work_experience.designation %></h4>
+                                                <div class=c-work__location><%- work_experience.location %></div>
+                                            </div>
+                                            <div class=o-grid__col-md-7>
+                                                <p></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            <% }); %>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="o-section t-section">
+            <div class="o-section__header-bg t-section__header"></div>
+            <div class="o-section__content-bg t-section__content"></div>
+            <div class=o-container>
+                <div class=o-section__container>
+                    <header class="o-section__header t-section__header">
+                        <div class=o-content>
+                            <h2 class=o-section__heading> Education</h2>
+                            <div class="o-content__body o-section__description"></div>
+                        </div>
+                    </header>
+                    <div class="o-section__content t-section__content u-pt-0">
+                        <div class=o-content>
+                            <div class="a-education-timeline c-timeline t-border-color o-section__full-top-space">
+                                <div class="c-timeline__end t-border-color"></div>
+                                <% educational_qualifications.forEach(function(educationalQualification){ %>
+                                    <div class=c-timeline__item>
+                                            <div class="c-timeline__point t-timeline__point t-primary-bg"></div>
+                                            <div class=o-content>
+                                                <div class=o-grid>
+                                                    <div class=o-grid__col-md-5>
+                                                        <div class=c-work__timeframe>
+                                                            <% if (educationalQualification.from.month || educationalQualification.from.year) { %>
+                                                                <%- educationalQualification.from.month %> <%- educationalQualification.from.year %> &ndash;
+                                                            <% } %>
+
+                                                            <% if (educationalQualification.to.month || educationalQualification.to.year) { %>
+                                                                <%- educationalQualification.to.month %> <%- educationalQualification.to.year %>
+                                                            <% } %>
+
+                                                            <% if (educationalQualification.currently_studying_here) { %>
+                                                                Present
+                                                            <% } %>
+                                                        </div>
+                                                        <h3 class=c-work__heading> <%- educationalQualification.institution %></h3>
+                                                        <h4 class=c-work__title> <%- educationalQualification.course %></h4>
+                                                        <div class=c-work__location><%- educationalQualification.location %></div>
+                                                    </div>
+                                                    <div class=o-grid__col-md-7>
+                                                        <p></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                <% }); %>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="o-section t-section o-section--footer">
+            <div class="o-section__header-bg t-section__header"></div>
+            <div class="o-section__content-bg t-section__content"></div>
+            <div class=o-container>
+                <div class=o-section__container>
+                    <header class="o-section__header t-section__header">
+                        <div class=o-content>
+                            <h2 class=o-section__heading> Contact</h2>
+                            <div class="o-content__body o-section__description">Call me, maybe.</div>
+                        </div>
+                    </header>
+                    <div class="o-section__content t-section__content">
+                        <div class=c-footer__contact>
+                            <div class=o-grid>
+                                <div class="o-grid__col-md-3 o-grid__col-sm-6">
+                                    <div class="a-header o-content">
+                                        <div class=o-content__body>
+                                            <h4><i class="fas fa-map-marker-alt"></i> &nbsp; Location</h4>
+                                            <address> <%= current_location %> </address>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="o-grid__col-md-3 o-grid__col-sm-6">
+                                    <div class="a-header o-content">
+                                        <div class=o-content__body>
+                                            <a href='tel:<%= mobile %>' class=t-link-container>
+                                                <h4><i class="fas fa-mobile-alt"></i> &nbsp; Mobile</h4>
+                                                <p><span class=t-link-container__item--blended> <%= mobile_label %> </span></p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="o-grid__col-md-3 o-grid__col-sm-6">
+                                    <div class="a-header o-content">
+                                        <div class=o-content__body>
+                                            <a href='mailto:<%= email %>' class=t-link-container>
+                                                <h4><i class="far fa-envelope"></i> &nbsp; Email</h4>
+                                                <p> <span class=t-link-container__item--blended> <%= email %> </span></p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="o-grid__col-md-3 o-grid__col-sm-6">
+                                    <div class="a-header o-content">
+                                        <div class=o-content__body>
+                                            <a href="<%= resume_download_link %>" class=t-link-container>
+                                                <h4><i class="far fa-file-pdf"></i> &nbsp; Resume</h4>
+                                                <p> <span class=t-link-container__item--blended> Download </span></p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class=c-footer__contact-divider>
+
+                        <div class=o-content>
+                            <div class=c-footer__bottom>
+                                <div class=c-footer__brand>
+                                    <div class=c-brand>
+                                        <div class=o-content__body>
+                                            <div class="c-brand__title t-title">
+                                                <span class="c-brand__sizer c-brand__sizer--sm">
+                                                    <a target=”_blank” href='http://www.google.com/search?q=%23vnoitkumar' rel=noreferrer aria-label='hashtag' class="a-footer c-brand__first-word t-title__first-word"> <%= hashtag %> </a>
+                                                    <span class="a-footer c-brand__second-word t-title__second-word"> <%= name %> </span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="c-footer__social-buttons c-social-buttons o-content__body">
+                                    <% social_profiles.forEach(function(social_profile){ %>
+                                        <li class=a-footer>
+                                            <a href='<%- social_profile.link %>' target=_blank rel=noreferrer class="c-social-button t-social-button" aria-label='<%- social_profile.name %>'>
+                                                <i class='<%- social_profile.font_awesome_icon %>'></i>
+                                            </a>
+                                        </li>
+                                    <% }); %>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </div>
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-127106449-1', 'auto');
+        ga('send', 'pageview');
+
+		if('serviceWorker'in navigator){navigator.serviceWorker.register('/sw.js');}
+    </script>
+</body>
+
+</html>
