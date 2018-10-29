@@ -135,10 +135,10 @@ const educationalQualifications = [
 ];
 
 const jsonData = {
-    title: 'Vinoth Kumar | Web Developer',
-    description: 'Web Developer, skilled in all stages of the development life cycle for a dynamic web project in startups',
+    title: 'Vinoth Kumar | Senior Software Engineer',
+    description: 'Proficient in PHP, Laravel, AWS, GCP, Docker and have experience working in Node Js and Angular.',
     hashtag: '#vnoitkumar',
-    job_profile: 'Web Developer',
+    job_profile: 'Senior Software Engineer',
     resume_download_link: 'https://docs.google.com/document/d/1rpThwC9VaUAKjSQbxeWsBAEhgAZXv1y533Pzn4QA6Jo/export?format=pdf',
     url: 'https://vnoit.com',
     name: 'Vinoth Kumar',
