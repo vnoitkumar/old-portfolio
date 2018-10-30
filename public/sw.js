@@ -1,5 +1,5 @@
 importScripts('/js/cache-polyfill.js');
-const version = "1.0.0";
+const version = "2.0.1";
 const cacheName = `vnoit-${version}`;
 self.addEventListener('install', e => {
     e.waitUntil(caches.open(cacheName).then(cache => {
@@ -14,8 +14,8 @@ self.addEventListener('install', e => {
                 '/css/fontawesome/css/custom-fontawesome.css',
                 '/images/vnoitkumar-avatar.webp',
                 '/images/favicon.ico',
-                '/images/favicon-32X32.png',
-                '/images/favicon-16X16.png',
+                '/images/favicon-32x32.png',
+                '/images/favicon-16x16.png',
                 '/images/apple-touch-icon.png'
             ]).then(() => self.skipWaiting());
     }));
