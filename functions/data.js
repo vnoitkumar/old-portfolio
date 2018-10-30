@@ -135,16 +135,17 @@ const educationalQualifications = [
 ];
 
 const jsonData = {
+    url: 'https://vnoit.com',
     title: 'Vinoth Kumar | Senior Software Engineer',
     description: 'Proficient in PHP, Laravel, AWS, GCP, Docker and have experience working in Node Js and Angular.',
     hashtag: '#vnoitkumar',
     job_profile: 'Senior Software Engineer',
     resume_download_link: 'https://docs.google.com/document/d/1rpThwC9VaUAKjSQbxeWsBAEhgAZXv1y533Pzn4QA6Jo/export?format=pdf',
-    url: 'https://vnoit.com',
     name: 'Vinoth Kumar',
     mobile: '+917708521528',
     mobile_label: '+91-77085 21528',
     email: 'vnoitkumar@gmail.com',
+    fb_share_image: '/images/fb-share.webp',
     current_location: 'Chennai, India',
     styles: {
         theme_color: '#2d2e2e',

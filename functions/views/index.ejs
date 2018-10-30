@@ -2,9 +2,10 @@
 <html lang='en'>
 
 <head>
-
-    <link rel=icon href=images/favicon-16X16.png type=image/png sizes=16x16>
-    <link rel=icon href=images/favicon-32X32.png type=image/png sizes=32x32>
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico"  />
 
     <meta charset='UTF-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
@@ -15,11 +16,11 @@
     <meta itemprop=name content='<%= title %>'>
     <meta itemprop=description content='<%= description %>'>
 
-    <meta name=og:title content='<%= description %>'>
-    <meta name=og:description content='<%= description %>'>
-    <meta name=og:url content='<%= url %>'>
-    <meta name=og:site_name content='<%= name %>'>
-    <meta name=og:type content=website>
+    <meta property=og:url content='<%= url %>'>
+    <meta property=og:title content='<%= title %>'>
+    <meta property=og:description content='<%= description %>'>
+    <meta property=og:image content='<%= fb_share_image %>'>
+    <meta property=og:type content=website>
 
     <meta name='mobile-web-app-capable' content='yes'>
     <meta name='theme-color' content='<%= styles.theme_color %>'>
