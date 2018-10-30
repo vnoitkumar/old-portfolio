@@ -146,6 +146,7 @@ const jsonData = {
     mobile_label: '+91-77085 21528',
     email: 'vnoitkumar@gmail.com',
     fb_share_image: '/images/fb-share.webp',
+    avatar_image: '/images/vnoitkumar-avatar.webp',
     current_location: 'Chennai, India',
     styles: {
         theme_color: '#2d2e2e',
@@ -155,6 +156,6 @@ const jsonData = {
     educational_qualifications: educationalQualifications
 };
 
-exports.jsonData = function() {
+exports.jsonData = function () {
     return jsonData;
-  }
+}
