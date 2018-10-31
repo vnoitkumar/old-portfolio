@@ -145,7 +145,9 @@ const jsonData = {
     mobile: '+917708521528',
     mobile_label: '+91-77085 21528',
     email: 'vnoitkumar@gmail.com',
-    fb_share_image: '/images/fb-share.jpg',
+    fb_share_image: 'https://vnoit.com/images/fb-share.jpg',
+    fb_app_id: '1166396203529747',
+    fb_api_version: 'v3.2',
     avatar_image: '/images/vnoitkumar-avatar.png',
     current_location: 'Chennai, India',
     styles: {
