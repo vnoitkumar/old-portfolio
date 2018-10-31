@@ -135,23 +135,34 @@ const educationalQualifications = [
 ];
 
 const jsonData = {
-    url: 'https://vnoit.com',
+    name: 'Vinoth Kumar',
     title: 'Vinoth Kumar | Senior Software Engineer',
     description: 'Proficient in PHP, Laravel, AWS, GCP, Docker and have experience working in Node Js and Angular.',
-    hashtag: '#vnoitkumar',
     job_profile: 'Senior Software Engineer',
-    resume_download_link: 'https://docs.google.com/document/d/1rpThwC9VaUAKjSQbxeWsBAEhgAZXv1y533Pzn4QA6Jo/export?format=pdf',
-    name: 'Vinoth Kumar',
     mobile: '+917708521528',
     mobile_label: '+91-77085 21528',
     email: 'vnoitkumar@gmail.com',
-    fb_share_image: 'https://vnoit.com/images/fb-share.jpg',
-    fb_app_id: '1166396203529747',
-    fb_api_version: 'v3.2',
-    avatar_image: '/images/vnoitkumar-avatar.png',
     current_location: 'Chennai, India',
+    url: 'https://vnoit.com',
+    hashtag: '#vnoitkumar',
+    resume_download_link: 'https://docs.google.com/document/d/1rpThwC9VaUAKjSQbxeWsBAEhgAZXv1y533Pzn4QA6Jo/export?format=pdf',
+    avatar_image: '/images/vnoitkumar-avatar.png',
     styles: {
         theme_color: '#2d2e2e',
+    },
+    social_share: {
+        fb: {
+            image: 'https://vnoit.com/images/social/facebook-link-post.jpg',
+            app_id: '1166396203529747',
+            api_version: 'v3.2',
+            image_width: '1200',
+            image_height: '628',
+        },
+        twitter: {
+            site: '@vnoitkumar',
+            creator: '@vnoitkumar',
+            image: 'https://vnoit.com/images/social/twitter.jpg',
+        }
     },
     social_profiles: socialProfiles,
     work_experiences: workExperiences,
