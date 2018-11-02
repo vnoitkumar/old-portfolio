@@ -1,5 +1,5 @@
 importScripts('/js/cache-polyfill.js');
-const version = "2.0.2";
+const version = "3.0.0";
 const cacheName = `vnoit-${version}`;
 self.addEventListener('install', e => {
     e.waitUntil(caches.open(cacheName).then(cache => {

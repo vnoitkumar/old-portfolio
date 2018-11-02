@@ -1,3 +1,3 @@
 # [#vnoitkumar](https://www.google.com/search?q=%23vnoitkumar) - Vinoth Kumar
 
-Web Developer, skilled in all stages of the development life cycle for a dynamic web project in startups.
+Wed Developer, proficient in PHP, Laravel, AWS, GCP, Docker and have experience working in Node Js and Angular.
