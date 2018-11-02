@@ -157,6 +157,7 @@ const jsonData = {
             api_version: 'v3.2',
             image_width: '1200',
             image_height: '628',
+            image_type: 'image/jpg'
         },
         twitter: {
             site: '@vnoitkumar',
