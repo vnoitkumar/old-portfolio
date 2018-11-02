@@ -15,4 +15,13 @@ app.get('/', (request, response) => {
     response.render('index', jsonData);
 });
 
+app.get('/data', (request, response) => {
+    response.setHeader('Content-Type', 'application/json');
+    response.send(JSON.stringify(jsonData));
+});
+
+app.get('/test', (request, response) => {
+    response.render('index', jsonData);
+});
+
 exports.app = functions.https.onRequest(app);

@@ -1,4 +1,19 @@
-const socialProfiles = [
+var fullName = 'Vinoth Kumar';
+var nickName = 'vnoitkumar';
+var email = 'vnoitkumar@gmail.com';
+var mobile = '+917708521528';
+var cityName = 'Chennai';
+var stateName = 'Tamil Nadu';
+var countryName = 'India';
+var cityLatitude = '13.0827';
+var cityLongitude = '80.2707';
+var url = 'https://vnoit.com/';
+var title = 'Vinoth Kumar | Developer';
+var description = 'Wed Developer, proficient in PHP, Laravel, AWS, GCP, Docker and have experience working in Node Js and Angular. #vnoitkumar';
+var keywords = 'vnoitkumar, #vnoitkumar, @vnoitkumar, developer, laravel, nodejs, php'
+var h1 = 'Vinoth Kumar\'s Portfolio - #vnoitkumar';
+
+var socialProfiles = [
     {
         name: 'LinkedIn',
         font_awesome_icon: 'fab fa-linkedin-in',
@@ -16,7 +31,7 @@ const socialProfiles = [
     }
 ];
 
-const workExperiences = [
+var workExperiences = [
     {
         from: {
             day: '',
@@ -83,7 +98,7 @@ const workExperiences = [
     },
 ];
 
-const educationalQualifications = [
+var educationalQualifications = [
     {
         from: {
             day: '',
@@ -134,27 +149,36 @@ const educationalQualifications = [
     },
 ];
 
-const jsonData = {
-    name: 'Vinoth Kumar',
-    title: 'Vinoth Kumar | Senior Software Engineer',
-    description: 'Proficient in PHP, Laravel, AWS, GCP, Docker and have experience working in Node Js and Angular.',
-    job_profile: 'Senior Software Engineer',
-    mobile: '+917708521528',
-    mobile_label: '+91-77085 21528',
-    email: 'vnoitkumar@gmail.com',
-    current_location: 'Chennai, India',
-    url: 'https://vnoit.com',
-    hashtag: '#vnoitkumar',
-    resume_download_link: 'https://docs.google.com/document/d/1rpThwC9VaUAKjSQbxeWsBAEhgAZXv1y533Pzn4QA6Jo/export?format=pdf',
-    avatar_image: '/images/vnoitkumar-avatar.png',
-    styles: {
-        theme_color: '#2d2e2e',
+var metaTagDetails = {
+    title: title,
+    subject: 'Vinoth Kumar - #vnoitkumar | Portfolio ',
+    revised: 'Friday, November 2nd, 2018, 10:00 pm',
+    keywords: keywords,
+    reply_to: email,
+    url: url,
+    owner: fullName,
+    geo: {
+        placename: countryName,
+        position: cityLatitude + '; ' + cityLongitude
+    },
+    open_graph: {
+        type: 'website',
+        url: url,
+        site_name: 'Vnoit.com',
+        email: email,
+        phone_number: mobile,
+        latitude: cityLatitude,
+        longitude: cityLongitude,
+        locality: cityName,
+    },
+    profile: {
+        first_name: fullName,
+        username: nickName,
+        gender: 'male',
     },
     social_share: {
         fb: {
             image: 'https://vnoit.com/images/social/facebook-link-post.jpg',
-            app_id: '1166396203529747',
-            api_version: 'v3.2',
             image_width: '1200',
             image_height: '628',
             image_type: 'image/jpg'
@@ -163,8 +187,38 @@ const jsonData = {
             site: '@vnoitkumar',
             creator: '@vnoitkumar',
             image: 'https://vnoit.com/images/social/twitter.jpg',
+            image_width: '1200',
+            image_height: '628',
         }
     },
+};
+
+var analyticsDetails = {
+    fb: {
+        app_id: '1166396203529747',
+        api_version: 'v3.2',
+    },
+};
+
+var jsonData = {
+    title: title,
+    description: description,
+    h1: h1,
+    name: fullName,
+    job_profile: 'Senior Software Engineer',
+    mobile: mobile,
+    mobile_label: '+91-77085 21528',
+    email: email,
+    current_location: cityName + ', ' + countryName,
+    hashtag: '#vnoitkumar',
+    avatar_image: '/images/vnoitkumar-avatar.png',
+    resume_download_link: 'https://docs.google.com/document/d/1rpThwC9VaUAKjSQbxeWsBAEhgAZXv1y533Pzn4QA6Jo/export?format=pdf',
+    meta_tag_details: metaTagDetails,
+    url: url,
+    styles: {
+        theme_color: '#2d2e2e',
+    },
+    analytics_details: analyticsDetails,
     social_profiles: socialProfiles,
     work_experiences: workExperiences,
     educational_qualifications: educationalQualifications

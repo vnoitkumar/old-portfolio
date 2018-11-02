@@ -13,10 +13,8 @@ self.addEventListener('install', e => {
                 '/css/min-width-760px.css',
                 '/css/fontawesome/css/custom-fontawesome.css',
                 '/images/vnoitkumar-avatar.png',
-                '/images/favicon.ico',
-                '/images/favicon-32x32.png',
-                '/images/favicon-16x16.png',
-                '/images/apple-touch-icon.png'
+                '/images/favicons/favicon.ico',
+                '/images/favicons/favicon-57.png'
             ]).then(() => self.skipWaiting());
     }));
 });
