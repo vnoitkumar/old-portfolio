@@ -9,7 +9,7 @@ var cityLatitude = '13.0827';
 var cityLongitude = '80.2707';
 var url = 'https://vnoit.com/';
 var title = 'Vinoth Kumar | Developer';
-var description = 'Wed Developer, proficient in PHP, Laravel, AWS, GCP, Docker and have experience working in Node Js and Angular. #vnoitkumar';
+var description = 'Proficient in PHP, Laravel, AWS, GCP, Docker and have experience working in Node Js and Angular.';
 var keywords = 'vnoitkumar, #vnoitkumar, @vnoitkumar, developer, laravel, nodejs, php'
 var h1 = 'Vinoth Kumar\'s Portfolio - #vnoitkumar';
 
