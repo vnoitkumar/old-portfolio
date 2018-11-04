@@ -151,7 +151,7 @@ var educationalQualifications = [
 
 var metaTagDetails = {
     title: title,
-    subject: 'Vinoth Kumar - #vnoitkumar | Portfolio ',
+    subject: 'Vinoth Kumar\'s Portfolio - #vnoitkumar',
     revised: 'Friday, November 2nd, 2018, 10:00 pm',
     keywords: keywords,
     reply_to: email,

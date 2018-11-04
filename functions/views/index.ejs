@@ -3,14 +3,15 @@
 
 <head>
 
-    <!-- Meta Tag Ref: https://gist.github.com/vnoitkumar/39a72939a8f376757e4cfeb52c9a96c8 -->
+    <!-- Hreflang Attribute -->
+    <link rel='alternate' href='<%= url %>' hreflang='x-default'>
+    <link rel='alternate' href='<%= url %>' hreflang='en'>
 
+    <!-- Meta Tags Ref: https://gist.github.com/vnoitkumar/39a72939a8f376757e4cfeb52c9a96c8 -->
     <!-- Basic HTML Meta Tags -->
-    <meta charset='UTF-8'>
     <meta http-equiv='X-UA-Compatible' content='ie=edge'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <meta http-equiv='content-type' content='text/html; charset=UTF-8'>
-
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <meta name=description content='<%= description %>'>
     <meta name=keywords content='<%= meta_tag_details.keywords %>'>
     <meta name='subject' content='<%= meta_tag_details.subject %>'>
@@ -33,6 +34,13 @@
     <meta name='og:longitude' content='<%= meta_tag_details.open_graph.longitude %>'>
     <meta name='og:locality' content='<%= meta_tag_details.open_graph.locality %>'>
 
+    <!-- OpenGraph Meta Tags - Image -->
+    <meta property=og:image content='<%= meta_tag_details.social_share.fb.image %>'>
+    <meta property='og:image:height' content='<%= meta_tag_details.social_share.fb.image_height %>'>
+    <meta property='og:image:width' content='<%= meta_tag_details.social_share.fb.image_width %>'>
+    <meta property='og:image:type' content='<%= meta_tag_details.social_share.fb.image_type %>'>
+    <meta property='og:image:alt' content='<%= name %>'>
+
     <!-- Facebook App Id -->
     <meta property=fb:app_id content='<%= analytics_details.fb.app_id %>'>
 
@@ -42,34 +50,26 @@
     <meta name='apple-mobile-web-app-title' content='<%= title %>'>
     <meta name='apple-mobile-web-app-status-bar-style' content='<%= styles.theme_color %>'>
 
+    <!-- Mobile Meta Tags -->
+    <meta name='mobile-web-app-capable' content='yes'>
+    <meta name='theme-color' content='<%= styles.theme_color %>'>
+
     <!-- Internet Explorer Meta Tags -->
     <meta name='msapplication-TileColor' content='#ffffff'>
     <meta name='msapplication-navbutton-color' content='<%= styles.theme_color %>'>
     <meta name='msapplication-TileImage' content='/images/favicons/favicon-144.png'>
     <meta name='msapplication-config' content='/browserconfig.xml'>
 
-    <!-- Profile Meta Tag -->
+    <!-- Profile Meta Tags -->
     <meta property=profile:first_name content='<%= meta_tag_details.profile.first_name %>'>
     <meta property=profile:username content='<%= meta_tag_details.profile.username %>'>
     <meta property=profile:gender content='<%= meta_tag_details.profile.gender %>'>
 
-    <!-- Item Property Meta Tag -->
+    <!-- Item Property Meta Tags -->
     <meta itemprop=name content='<%= title %>'>
     <meta itemprop=description content='<%= description %>'>
 
-    <!-- OpenGraph Meta Tags - Image -->
-    <meta property=og:image content='<%= meta_tag_details.social_share.fb.image %>'>
-    <meta property='og:image:height' content='<%= meta_tag_details.social_share.fb.image_height %>'>
-    <meta property='og:image:width' content='<%= meta_tag_details.social_share.fb.image_width %>'>
-    <meta property='og:image:type' content='<%= meta_tag_details.social_share.fb.image_type %>'>
-
-    <meta property='og:image:alt' content='<%= name %>'>
-
-    <!-- Mobile App Meta Tag -->
-    <meta name='mobile-web-app-capable' content='yes'>
-    <meta name='theme-color' content='<%= styles.theme_color %>'>
-
-    <!-- Twitter Meta Tag -->
+    <!-- Twitter Meta Tags -->
     <meta name='twitter:card' content='summary'>
     <meta name='twitter:site' content='<%= meta_tag_details.social_share.twitter.site %>'>
     <meta name='twitter:creator' content='<%= meta_tag_details.social_share.twitter.creator %>'>
