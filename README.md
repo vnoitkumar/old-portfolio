@@ -1,4 +1,4 @@
- [DEPRECATED] Active at https://github.com/vnoitkumar/my-portfolio
+ [DEPRECATED] Active at https://github.com/vnoitkumar/portfolio
 
 # [#vnoitkumar](https://www.google.com/search?q=%23vnoitkumar) - Vinoth Kumar
 
